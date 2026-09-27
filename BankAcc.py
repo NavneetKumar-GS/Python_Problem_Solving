@@ -1,12 +1,12 @@
 # Build a BankAccount class.
 
-# The constructor must accept an account_holder (string) and an initial_balance (float).
+# 1.The constructor must accept an account_holder (string) and an initial_balance (float).
 
-# Create a deposit(amount) method that adds to the balance.
+# 2.Create a deposit(amount) method that adds to the balance.
 
-# Create a withdraw(amount) method. If the user tries to withdraw more than the balance, print an error message and cancel the transaction.
+# 3.Create a withdraw(amount) method. If the user tries to withdraw more than the balance, print an error message and cancel the transaction.
 
-# Create a display_balance() method.
+# 4.Create a display_balance() method.
 
 
 
