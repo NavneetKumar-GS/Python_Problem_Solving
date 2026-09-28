@@ -36,3 +36,6 @@ print(User.is_valid_password("Pass1234"))  # True
 print(User.is_valid_password("password"))  # False
 
 print(User.active_users_count)
+
+
+
