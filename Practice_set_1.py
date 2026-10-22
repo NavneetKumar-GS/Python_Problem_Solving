@@ -43,3 +43,14 @@ is_palindrome = (num==reversed_num)
 print(f"Original Number: {num}")
 print(f"Reversed Number: {reversed_num}")
 print(f"Is the reverse true (Palindrome)? {is_palindrome}")
+
+
+# 6.Write a program that will tell whether the number entered by the user is odd or even.
+
+num = int(input("Enter the number: "))
+
+
+if num%2==0:
+    print("{num} is even")
+else:
+    print(f"{num} is odd")
