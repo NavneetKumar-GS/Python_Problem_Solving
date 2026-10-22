@@ -22,3 +22,11 @@ x,y = map(int ,input().split())
 
 x,y = y,x
 print(f"x = {x}, y = {y}")
+
+
+# 4.Write a program that will give you the sum of 3 digits
+x,y,z=map(int,input().split())
+
+sum= x+y+z
+
+print(f"Sum of {x}+{y}+{z}= {sum} ")
