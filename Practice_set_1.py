@@ -29,4 +29,17 @@ x,y,z=map(int,input().split())
 
 sum= x+y+z
 
-print(f"Sum of {x}+{y}+{z}= {sum} ")
+print(f"Sum of {x}+{y}+{z}= {sum}")
+
+
+# 5.Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
+
+num = int(input("Enter the number: "))
+
+reversed_num = int(str(num[::-1]))
+
+is_palindrome = (num==reversed_num)
+
+print(f"Original Number: {num}")
+print(f"Reversed Number: {reversed_num}")
+print(f"Is the reverse true (Palindrome)? {is_palindrome}")
