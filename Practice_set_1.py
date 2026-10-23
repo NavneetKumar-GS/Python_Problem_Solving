@@ -62,3 +62,18 @@ point_a, point_b = map(int, input().split())
 distance = math.dist(point_a,point_b)
 
 print(f"Euclidean distance is: {distance} ")
+
+
+# 8.Write a program that take a user inputr of three angles and will find out whether it can form a triangle or not.
+
+x,y,z = map(int, input().split())
+
+angle_sum = x+y+z
+
+if angle_sum == 180 and x>0 and y>0 and z>0:
+    print("\nSuccess: These angles can form a valid triangle.")
+else:
+    if angle_sum != 180:
+        print(f"Reason: The sum of angles is {angle_sum}°, but it must be exactly 180°.")
+    if x <= 0 or y <= 0 or z <= 0:
+            print("-> Reason: All angles must be greater than 0°.")
