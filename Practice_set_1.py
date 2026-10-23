@@ -77,3 +77,18 @@ else:
         print(f"Reason: The sum of angles is {angle_sum}°, but it must be exactly 180°.")
     if x <= 0 or y <= 0 or z <= 0:
             print("-> Reason: All angles must be greater than 0°.")
+
+
+# 9.Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit
+
+cost_price = int(input("Enter the cost: "))
+selling_price = int(input("Enter the selling price: "))
+
+
+profit = selling_price - cost_price
+loss = cost_price - selling_price
+
+if selling_price > cost_price:
+    print(f"You got a profit of {profit}")
+else:
+    print(f"You got a loss of {loss}")
