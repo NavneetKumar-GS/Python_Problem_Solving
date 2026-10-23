@@ -54,3 +54,11 @@ if num%2==0:
     print("{num} is even")
 else:
     print(f"{num} is odd")
+
+# 7.Write a program to find the euclidean distance between two coordinates.
+import math
+point_a, point_b = map(int, input().split())
+
+distance = math.dist(point_a,point_b)
+
+print(f"Euclidean distance is: {distance} ")
