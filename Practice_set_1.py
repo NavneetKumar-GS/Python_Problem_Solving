@@ -92,3 +92,26 @@ if selling_price > cost_price:
     print(f"You got a profit of {profit}")
 else:
     print(f"You got a loss of {loss}")
+
+
+# # 10 Write a program that will determine weather when the value of temperature and humidity is provided by the user.
+# TEMPERATURE(C)      HUMIDITY(%)      WEATHER
+
+#       >= 30                             >=90                Hot and Humid
+#       >= 30                             < 90                 Hot
+#       <30                                >= 90               Cool and Humid
+#       <30                                 <90                 Cool
+
+
+temp = int(input("Enter the temperature: "))
+humidity = int(input("Enter the humidity: "))
+
+
+if temp >= 30 and humidity >= 90:
+    print("Hot and Humid")
+elif temp>=30 and humidity<90:
+    print("Hot")
+elif temp < 30 and humidity >= 90:
+    print("Cool and Humid")
+elif temp<30 and humidity<90:
+    print("Cool")
