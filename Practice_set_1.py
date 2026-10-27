@@ -115,3 +115,18 @@ elif temp < 30 and humidity >= 90:
     print("Cool and Humid")
 elif temp<30 and humidity<90:
     print("Cool")
+
+
+# 11 Write a program that will take three digits from the user and add the square of each digit.
+
+import math
+
+x,y,z = map(int,input().split())
+
+x = math.pow(x,2)
+y = math.pow(y,2)
+z = math.pow(z,2)
+
+sum = x+y+z
+
+print(f"Sum of square of three digit = {sum}")
