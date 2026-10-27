@@ -155,3 +155,31 @@ while temp > 0:
     temp //= 10
 
 print(total_sum == number)
+
+
+# 13 Write a program that will give you the in hand salary after deduction of HRA(10%),DA(5%),PF(3%), and tax(if salary is between 5-10 lakh–10%),(10-20lakh–20%),(>20– 30%)(0-1lakh print k).
+
+
+gross_salary = int(input("Enter your gross salaray: "))
+
+
+HRA = gross_salary*0.1
+DA = gross_salary*0.05
+PF = gross_salary*0.03
+
+tax = 0
+
+if 500000<= gross_salary <=1000000:
+    tax = gross_salary*0.1
+elif 1000000<= gross_salary <=2000000:
+    tax = gross_salary*0.2
+elif gross_salary >=2000000:
+    tax = gross_salary*0.3
+
+in_hand = gross_salary - (HRA + DA + PF + tax)
+
+
+if 0 <= in_hand <= 100000:
+    print(f"{in_hand / 1000:.1f}k")
+else:
+    print(f"₹{in_hand:,.2f}")
