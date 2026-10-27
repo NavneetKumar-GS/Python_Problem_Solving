@@ -186,26 +186,43 @@ else:
 
 # 14 Write a menu driven program - 1.cm to ft  2.kl to miles  3.usd to inr  4.exit
 
-while True:
-    user_input = input("""Choose an option:
-                    1.cm to ft
-                    2.kl to miles
-                    3.usd to inr
-                    4.exit \n""")
+    while True:
+        user_input = input("""Choose an option:
+                        1.cm to ft
+                        2.kl to miles
+                        3.usd to inr
+                        4.exit \n""")
 
-    if user_input=="1":
-        centimeter = int(input("Enter the value: "))
-        feet = centimeter/30.48
-        print(f"{centimeter} cm = {feet} feet")
-    elif user_input == "2":
-        kl = int(input("Enter the value: "))
-        mile = kl*0.621371
-        print(f"{kl} kilometer = {mile} miles")
-    elif user_input == "3":
-        usd = int(input("Enter the value: "))
-        inr = usd*95.11
-        print(f"{usd} USD = {inr} INR")
-    elif user_input == "4":
-        exit()
-    else:
-        print("Invalid option")
+        if user_input=="1":
+            centimeter = int(input("Enter the value: "))
+            feet = centimeter/30.48
+            print(f"{centimeter} cm = {feet} feet")
+        elif user_input == "2":
+            kl = int(input("Enter the value: "))
+            mile = kl*0.621371
+            print(f"{kl} kilometer = {mile} miles")
+        elif user_input == "3":
+            usd = int(input("Enter the value: "))
+            inr = usd*95.11
+            print(f"{usd} USD = {inr} INR")
+        elif user_input == "4":
+            exit()
+        else:
+            print("Invalid option")
+
+
+# 15 Write a program that will tell the number of dogs and chicken are there when the user will provide the value of total heads and legs.
+
+head = int(input("Enter the number of heads: "))
+legs= int(input("Enter the number of legs: "))
+
+if legs % 2 != 0 or legs < (head * 2) or legs > (head * 4):
+    print("No valid solution found for the given heads and legs.")
+else:
+    dogs = (legs - (head * 2)) // 2
+    chickens = head - dogs
+
+    
+    print(f"Dogs: {dogs}")
+    print(f"Chickens: {chickens}")
+
