@@ -183,3 +183,29 @@ if 0 <= in_hand <= 100000:
     print(f"{in_hand / 1000:.1f}k")
 else:
     print(f"₹{in_hand:,.2f}")
+
+# 14 Write a menu driven program - 1.cm to ft  2.kl to miles  3.usd to inr  4.exit
+
+while True:
+    user_input = input("""Choose an option:
+                    1.cm to ft
+                    2.kl to miles
+                    3.usd to inr
+                    4.exit \n""")
+
+    if user_input=="1":
+        centimeter = int(input("Enter the value: "))
+        feet = centimeter/30.48
+        print(f"{centimeter} cm = {feet} feet")
+    elif user_input == "2":
+        kl = int(input("Enter the value: "))
+        mile = kl*0.621371
+        print(f"{kl} kilometer = {mile} miles")
+    elif user_input == "3":
+        usd = int(input("Enter the value: "))
+        inr = usd*95.11
+        print(f"{usd} USD = {inr} INR")
+    elif user_input == "4":
+        exit()
+    else:
+        print("Invalid option")
