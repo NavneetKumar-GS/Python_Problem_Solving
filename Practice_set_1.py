@@ -130,3 +130,28 @@ z = math.pow(z,2)
 sum = x+y+z
 
 print(f"Sum of square of three digit = {sum}")
+
+
+# 12 Write a program that will check whether the number is armstrong(Narcissist) number or not.
+
+number = int(input("Enter the number: "))
+
+if number<0:
+     "Negative numbers cannot be Armstrong!"
+
+temp = number
+num_digit = 0
+
+while temp > 0:
+    num_digit += 1
+    temp //=1
+
+temp = number
+
+total_sum = 0
+while temp > 0:
+    digit = temp % 10
+    total_sum += digit ** num_digit
+    temp //= 10
+
+print(total_sum == number)
