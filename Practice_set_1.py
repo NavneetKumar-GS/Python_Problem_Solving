@@ -332,3 +332,29 @@ while n>0:
     count += 1
 print("Number of digits =", count)
 
+
+# 25. Write a program to print the following pattern
+# *
+# **
+# ***
+# ****
+# *****
+
+
+for i in range(5):
+    print("*"*i)
+
+
+# 26. Write a program to print the following pattern
+# *
+# **
+# ***
+# **
+# *
+
+
+for i in range(1, 4):
+    print("*" * i)
+
+for i in range(2, 0, -1):
+    print("*" * i)
