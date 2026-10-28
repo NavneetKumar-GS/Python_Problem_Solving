@@ -30,3 +30,15 @@ num,den = int(input("Enter the denominator & numerator: "))
 simplify = Fraction(numerator=num,denominator=den)
 
 print(f"Simplification= {simplify}")
+
+
+# 3. Find the length of a given string without using the len() function. 
+
+string = input("Enter a string: ")
+
+count = 0
+
+for s in string:
+    count= count + 1
+
+print("Length of string =", count)
