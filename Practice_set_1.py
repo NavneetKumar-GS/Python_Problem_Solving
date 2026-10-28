@@ -233,6 +233,13 @@ else:
 n = int(input("Enter the number: "))
 
 
-sum= n(n+1)/2
+sum= n*(n+1)//2
 
 print(f"Sum of 10 numbers: {sum}")
+
+
+# 17 Write a program to print the first 25 odd numbers
+
+for i in range(0,26):
+    if i%2 != 0:
+        print(i)
