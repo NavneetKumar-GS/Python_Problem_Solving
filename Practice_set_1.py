@@ -259,3 +259,76 @@ for year in range(10,0,-1):
     print(year,"year -",current_population)
     current_population = current_population*0.9
 
+
+# 19 Write a program to print all the unique combinations of 1,2,3 and 4
+
+
+    for i in range(1,5):
+        for j in range(1,5):
+            for k in range(1,5):
+                for l in range(1,5):
+                    if i!=j and i!=k and i!=l and j!=k and j!=l and k!=l:
+                        print(i,j,k,l, sep="")
+
+
+# 20 User will provide 2 numbers you have to find the HCF of those 2 numbers
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+hcf = 1
+
+for i in range(1, min(a, b) + 1):
+    if a % i == 0 and b % i == 0:
+        hcf = i
+
+print("HCF =", hcf)
+
+
+#21. Print the first 20 numbers of a Fibonacci series
+
+a = 0
+b = 1
+
+for i in range(20):
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+
+# 22. Write a program to find the compound interest 
+
+p = float(input("Enter principal amount: "))
+r = float(input("Enter rate of interest: "))
+t = float(input("Enter time in years: "))
+
+ci = p * (1 + r / 100) ** t - p
+
+print("Compound Interest =", ci)
+
+# 23. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+
+n = int(input("Enter an integer: "))
+
+nn = int(str(n) * 2)
+nnn = int(str(n) * 3)
+
+result = n + nn + nnn
+
+print("Result =", result)
+
+
+
+
+# 24. Take a number from the user and find the number of digits in it. 
+
+n = int(input("Enter the number: "))
+
+n = abs(n)
+count = 0
+
+while n>0:
+    n = n//10
+    count += 1
+print("Number of digits =", count)
+
