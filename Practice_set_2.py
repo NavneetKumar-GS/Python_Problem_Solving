@@ -52,3 +52,12 @@ email = input("Enter the email: ")
 
 username = email.split('@')[0]
 print(username)
+
+
+# 5.Count the frequency of a particular character in a provided string. Eg 'hello how are you' is the string, the frequency of h in this string is 2.
+
+string = input("Enter a string: ")
+char = input("Enter which char to count: ")
+
+freq=string.count(char)
+print(freq)
