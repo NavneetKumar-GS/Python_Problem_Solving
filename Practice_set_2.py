@@ -143,3 +143,13 @@ for num in numbers:
         max_value = num
 
 print(max_value)
+
+
+
+# 13. Write a python program to reverse a list
+
+
+num = [1,2,3,4,5,6,8]
+
+reverse_list = num[::-1]
+print(reverse_list)
