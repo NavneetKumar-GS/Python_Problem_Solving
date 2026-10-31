@@ -166,3 +166,12 @@ if num in list:
 else:
     print(f"{num} is not in the list")
 
+# 15.Write a program that can create a new list from a given list where each item in the new list is square of the item of the old list
+
+user_input = list(input("Enter the number to form a list: "))
+old_list = [int(num) for num in user_input]
+
+new_list = [pow(num,2) for num in old_list ]
+
+print("Original List:", old_list)
+print("Squared List: ", new_list)
