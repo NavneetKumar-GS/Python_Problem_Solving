@@ -83,3 +83,12 @@ for char in char_to_check:
     if char in string:
         count += 1
 print(count)
+
+
+# 8. Write a program which can remove a particular character from a string. 
+
+string = input("Enter the string: ")
+char = input("Enter the char to remove: ")
+
+final_string = string.replace(char,"")
+print(final_string)
