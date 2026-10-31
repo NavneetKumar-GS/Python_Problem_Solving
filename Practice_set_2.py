@@ -92,3 +92,14 @@ char = input("Enter the char to remove: ")
 
 final_string = string.replace(char,"")
 print(final_string)
+
+
+# 9. Write a program that can check whether a given string is palindrome or not.
+
+string = input(":Enter the string: ").lower()
+
+if string == string[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
