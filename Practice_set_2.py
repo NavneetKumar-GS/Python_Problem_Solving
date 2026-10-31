@@ -153,3 +153,16 @@ num = [1,2,3,4,5,6,8]
 
 reverse_list = num[::-1]
 print(reverse_list)
+
+
+# 14. Write a python program to search a given number from a list
+
+num = int(input("Enter the number to find: "))
+
+list = [1,2,3,4,5,6,8]
+
+if num in list:
+    print(f"{num} is in the list")
+else:
+    print(f"{num} is not in the list")
+
