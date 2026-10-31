@@ -192,3 +192,21 @@ final_string = " ".join(reversed_string)
 
 print(string)
 print(final_string)
+
+
+# 17.Write a program that can count the number of words in a given string
+
+string = input("Enter the string: ")
+
+count=0
+words = string.split()
+for word in enumerate(words):
+    count+=1
+
+print(f"Your string has {count} words")
+
+
+
+# 18.Write a program to check if a list is in ascending order or not
+
+
