@@ -175,3 +175,20 @@ new_list = [pow(num,2) for num in old_list ]
 
 print("Original List:", old_list)
 print("Squared List: ", new_list)
+
+# 16. Write a program that can reverse words of a given string.
+            # Eg if the input is Hello how are you
+            # Output should be you are how Hello
+
+
+string = input("Enter the string: ")
+
+words = string.split()
+
+reversed_string = words[::-1]
+
+final_string = " ".join(reversed_string)
+
+
+print(string)
+print(final_string)
