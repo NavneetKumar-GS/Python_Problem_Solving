@@ -246,3 +246,18 @@ list1.extend(list2)
 print("Merged List:", list1)
 
 
+# 21.Write a program to replace an item with a different item if found in the list 
+
+my_list = ["apple", "banana", "cherry", "banana", "date"]
+
+old_item = "banana"
+new_item = "orange"
+
+for i in range(len(my_list)):
+    if my_list[i] == old_item:
+        my_list[i] = new_item
+print("Updated List:", my_list)
+
+
+
+
