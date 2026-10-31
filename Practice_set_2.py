@@ -130,3 +130,16 @@ for word in words:
 
 final_string = " ".join(final_words)
 print(final_string)
+
+
+# 12. Write a python program to find the max item from a list without using the max function
+
+numbers = list(input("Enter the numbers: "))
+
+max_value = numbers[0]
+
+for num in numbers:
+    if num>max_value:
+        max_value = num
+
+print(max_value)
