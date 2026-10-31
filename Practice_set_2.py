@@ -103,3 +103,13 @@ if string == string[::-1]:
 else:
     print("Not a palindrome")
 
+
+# 10 Write a python program to remove all the duplicates from a list
+
+
+num = [1,1,2,3,4,5,5,6,5,7,7,8,2,2]
+
+unique_num = list(set(num))
+print(unique_num)
+
+
