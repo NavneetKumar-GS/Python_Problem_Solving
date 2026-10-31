@@ -235,3 +235,14 @@ for num in list:
         odd_list.append(num)
     else:
         print("List is not a integer")
+
+# 20. Write a program to merge 2 list without using the + operator
+
+list1 = [1,2,3,4,]
+list2 = [5,6,7,8,]
+
+list1.extend(list2)
+
+print("Merged List:", list1)
+
+
