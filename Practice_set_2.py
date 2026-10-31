@@ -113,3 +113,20 @@ unique_num = list(set(num))
 print(unique_num)
 
 
+# 11. Write a python program to convert a string to title case without using the title()
+
+
+string = input("Enter a string: ").lower()
+
+
+words = string.split()
+
+final_words = []
+
+for word in words:
+    cleaned_words = word[0].upper() + word[1:].lower()
+    final_words.append(cleaned_words)
+
+
+final_string = " ".join(final_words)
+print(final_string)
