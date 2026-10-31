@@ -63,10 +63,23 @@ freq=string.count(char)
 print(freq)
 
 
-# 6. Find the index position of a particular character in another string. 
+# 6. Find the index position of a particular character in string. 
 
 string = input("Enter the string: ")
 char = input("Enter the char to find the index: ")
 
 pos = string.find(char)
 print(pos)
+
+
+# 7. Count the number of vowels in a string provided by the user.
+
+string = input("Enter the string: ").lower()
+char_to_check = ['a','e','i','o','u']
+
+count=0
+
+for char in char_to_check:
+    if char in string:
+        count += 1
+print(count)
