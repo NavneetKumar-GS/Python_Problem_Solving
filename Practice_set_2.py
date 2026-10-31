@@ -206,7 +206,18 @@ for word in enumerate(words):
 print(f"Your string has {count} words")
 
 
-
 # 18.Write a program to check if a list is in ascending order or not
 
+list1 = [9,8,7,6,5,4,3,2,1]
+list2 = [1,2,3,4,5,6,7,8,9]
+
+if list1 == sorted(list2):
+    print("True")
+else:
+    print("False")
+
+if list1 == sorted(list2):
+    print("True")
+else:
+    print("False")
 
