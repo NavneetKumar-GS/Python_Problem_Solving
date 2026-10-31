@@ -259,5 +259,16 @@ for i in range(len(my_list)):
 print("Updated List:", my_list)
 
 
+# 22.write a program that can convert a 2D to 1D
 
+
+matrix_2D = [[1,2,3],[4,5],[6,7,8,9]]
+list_1d = []
+
+for sublist in matrix_2D:
+    for item in sublist:
+        list_1d.append(item)
+
+print("Original 2D List:", matrix_2D)
+print("Flattened 1D List:", list_1d)
 
