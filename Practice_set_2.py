@@ -61,3 +61,12 @@ char = input("Enter which char to count: ")
 
 freq=string.count(char)
 print(freq)
+
+
+# 6. Find the index position of a particular character in another string. 
+
+string = input("Enter the string: ")
+char = input("Enter the char to find the index: ")
+
+pos = string.find(char)
+print(pos)
