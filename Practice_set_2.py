@@ -292,3 +292,10 @@ max_per_row = [max(row) for row in matrix]
 
 print(max_per_row)
 
+# 25.Write a program that can convert an integer to string. 
+
+num  = input("Enter a string: ")
+
+string = str(num)
+
+print(string)
