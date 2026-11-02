@@ -342,3 +342,30 @@ for i in range(len(M1)):
 for rows in M3:
     print(rows)
 
+
+# 28.Write a program that can check if you can perform matrix multiplication on 2 matrices 
+
+A = [[2,4],
+      [1,3]]
+
+B = [[6,8],
+      [5,7]]
+
+
+rows_a = len(A)
+cols_a = len(A[0]) if rows_a>0 else 0 
+
+rows_b = len(B)
+cols_b = len(B[0]) if rows_b>0 else 0
+
+print(f"Matrix A dimensions: {rows_a}x{cols_a}")
+print(f"Matrix B dimensions: {rows_b}x{cols_b}")
+print("-" * 30)
+
+if cols_a == rows_b:
+    print("Result: SUCCESS! You can multiply these matrices.")
+    print(f"The resulting matrix size will be: {rows_a}x{cols_b}")
+else:
+    print("Result: ERROR! Cannot multiply these matrices.")
+    print(f"Reason: Columns of A ({cols_a}) must match Rows of B ({rows_b}).")
+
