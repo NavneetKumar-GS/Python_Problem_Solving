@@ -272,3 +272,13 @@ for sublist in matrix_2D:
 print("Original 2D List:", matrix_2D)
 print("Flattened 1D List:", list_1d)
 
+# 23. Write a program that can perform union and intersection on 2 given list. 
+
+set1 = {1,2,3,4,}
+set2 = {5,6,7,8,}
+
+union = set1.union(set2)
+inter = set1.intersection(set2)
+
+print(union)
+print(inter)
