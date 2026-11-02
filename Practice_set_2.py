@@ -282,3 +282,13 @@ inter = set1.intersection(set2)
 
 print(union)
 print(inter)
+
+
+# 24. the max item of each row of a matrix
+
+matrix = [[1,2,3,7]]
+
+max_per_row = [max(row) for row in matrix]
+
+print(max_per_row)
+
