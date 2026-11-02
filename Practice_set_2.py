@@ -321,3 +321,24 @@ if rows>0:
         col+=1
 
 print(f"Rows & Column = ({rows},{col})")
+
+
+# 27. Matrix multiplication without numpy or any other library
+
+M1 = [[2,4],
+      [1,3]]
+
+M2 = [[6,8],
+      [5,7]]
+
+M3 = [[0,0],[0,0]]
+
+for i in range(len(M1)):
+    for j in range(len(M2[0])):
+        for k in range(len(M2)):
+            M3[i][j] += M1[i][k] * M2[k][j]
+
+
+for rows in M3:
+    print(rows)
+
