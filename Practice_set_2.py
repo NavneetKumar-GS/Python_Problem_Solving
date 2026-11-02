@@ -369,3 +369,23 @@ else:
     print("Result: ERROR! Cannot multiply these matrices.")
     print(f"Reason: Columns of A ({cols_a}) must match Rows of B ({rows_b}).")
 
+
+# 29.Write a program that can sort a given unsorted list. Dont use any built in function for sorting.
+
+
+num = [1,4,6,8,2,9,10]
+
+n = len(num)
+i = 0
+
+while i<n:
+    j=0
+    while j<n-i-1:
+        if num[j] > num[j+1]:
+            num[j],num[j+1] = num[j+1], num[j]
+        j+=1
+    i+=1
+
+print("Sorted list: ", num)
+
+
