@@ -299,3 +299,25 @@ num  = input("Enter a string: ")
 string = str(num)
 
 print(string)
+
+# 26.Write a program to print the shape of a matrix. 
+
+
+matrix = [ [1,2,3],
+    [9, 10, 11],
+       [4,5,6],
+          [7,8,12]   # Row 3
+]
+
+
+rows = 0
+for row in matrix:
+    rows+=1
+
+col = 0
+
+if rows>0:
+    for element in matrix[0]:
+        col+=1
+
+print(f"Rows & Column = ({rows},{col})")
