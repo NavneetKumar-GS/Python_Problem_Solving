@@ -389,3 +389,47 @@ while i<n:
 print("Sorted list: ", num)
 
 
+# 30.Write a program that can find the most used word in a bollywood song
+
+lyrics = """
+Tujhe dekha toh yeh jaana sanam
+Pyaar hota hai deewana sanam
+Tujhe dekha toh yeh jaana sanam
+Pyaar hota hai deewana sanam
+Ab yahan se kahan jaayein hum
+Teri baahon mein mar jaayein hum
+"""
+
+cleaned_text = ""
+punctuation = ".,!?;:()\"'\n"
+
+
+for char in lyrics.lower():
+    if char in punctuation:
+        cleaned_text =+ " "
+    else:
+        cleaned_text+=char
+
+words = cleaned_text.split()
+
+
+word_count = {}
+
+for word in words:
+    if word in word_count:
+        word_count[word]+=1
+    else:
+        word_count[word] = 1
+
+most_used_word = ""
+max_count = 0
+
+for word,count in word_count.items():
+    if count>max_count:
+        max_count=count
+        most_used_word = word
+
+print(f"The most used word is: '{most_used_word}'")
+print(f"It appears {max_count} times.")
+
+
