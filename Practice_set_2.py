@@ -444,3 +444,11 @@ for i in num:
 
 print(square)
     
+
+# 32.Write a program to merge two given dictionary
+
+dict1 = {"first_name":"Navneet"}
+dict2 = {'last_name':"Kumar"}
+
+final_dict = dict1|dict2
+print(final_dict)
