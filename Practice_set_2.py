@@ -466,3 +466,28 @@ rev_values = reversed(list(dict.values()))
 new_dict = {key:next(rev_values) for key in dict}
 
 print(new_dict)
+
+
+# 34.Write a program to find histogram of a given set of numbers. Take bin size from user. Print the result in the form of a dictionary.
+
+
+
+
+
+
+
+# 35.Write a function that accepts a string and returns the number of upper case chars and lower case chars as a dictionary
+
+
+text = input("Enter a string: ")
+
+
+dict = {'UPPERCASE':0,'LOWERCASE':0}
+
+for char in text:
+    if char.isupper():
+        dict['UPPERCASE'] +=1
+    elif char.islower():
+        dict['LOWERCASE'] +=1
+print(dict)
+
