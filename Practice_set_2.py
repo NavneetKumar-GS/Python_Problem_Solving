@@ -452,3 +452,17 @@ dict2 = {'last_name':"Kumar"}
 
 final_dict = dict1|dict2
 print(final_dict)
+
+# 33.Write a program to swap the key value pair for max and min values
+# Eg if the dict is like this {‘a’:1,’b’:2,’c’:3}
+# Output should be {a:3,b:2,c:1}
+
+
+dict = {'a':1,'b':2,'c':3}
+
+
+rev_values = reversed(list(dict.values()))
+
+new_dict = {key:next(rev_values) for key in dict}
+
+print(new_dict)
